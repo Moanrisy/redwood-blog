@@ -10,7 +10,9 @@ const Article = ({ article }: Props) => {
   return (
     <article key={article.id}>
       <header>
-        <Link to={routes.article({ id: article.id })}>{article.title}</Link>
+        <h2>
+          <Link to={routes.article({ id: article.id })}>{article.title}</Link>
+        </h2>
       </header>
       <p>{article.body}</p>
       <div>Posted at: {article.createdAt}</div>
